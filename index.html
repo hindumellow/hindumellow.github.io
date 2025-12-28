@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <!-- Inter Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/src/style.css">
+</head>
+
+<body>
+  <!-- Header -->
+  <header id="header" class="header">
+    <div class="container nav">
+      <a href="#" class="logo">MyPortfolio.</a>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+          <li><button id="theme-toggle" class="theme-toggle" aria-label="Toggle Dark Mode">☀️</button></li>
+          <li><a href="/resume.pdf" class="btn btn-primary">Resume</a></li>
+        </ul>
+      </nav>
+
+      <button class="menu-toggle" aria-label="Open Menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="hero" class="section hero-section">
+      <div class="container hero-content">
+        <p class="hero-intro">Hi, my name is</p>
+        <h1 class="hero-name">John Doe.</h1>
+        <h2 class="hero-tagline">I build things for the web.</h2>
+        <p class="hero-description">
+          I'm a software engineer specializing in building (and occasionally designing) exceptional digital experiences.
+          Currently, I'm focused on building accessible, human-centered products.
+        </p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary">Check out my work!</a>
+          <a href="#contact" class="btn btn-solid">Contact Me</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about-section">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+          <div class="about-text">
+            <p>
+              Hello! My name is John and I enjoy creating things that live on the internet. My interest in web
+              development started back in 2012 when I decided to try editing custom Tumblr themes — turns out hacking
+              together HTML & CSS is pretty fun!
+            </p>
+            <p>
+              Fast-forward to today, and I’ve had the privilege of working at an <a href="#">advertising agency</a>, a
+              <a href="#">start-up</a>, a <a href="#">huge corporation</a>, and a <a href="#">student-led design
+                studio</a>. My main focus these days is building accessible, inclusive products and digital experiences
+              for a variety of clients.
+            </p>
+            <p>
+              Here are a few technologies I’ve been working with recently:
+            </p>
+            <ul class="skills-list-text">
+              <li>JavaScript (ES6+)</li>
+              <li>React</li>
+              <li>Node.js</li>
+              <li>TypeScript</li>
+              <li>Eleventy</li>
+              <li>WordPress</li>
+            </ul>
+          </div>
+          <div class="about-img">
+            <!-- Placeholder for profile image -->
+            <div class="img-wrapper">
+              <div class="img-placeholder"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills-section">
+      <div class="container">
+        <h2 class="section-title">My Skills</h2>
+        <div class="skills-grid">
+          <div class="skill-category">
+            <h3>Frontend</h3>
+            <div class="skill-tags">
+              <span>HTML5</span>
+              <span>CSS3</span>
+              <span>JavaScript</span>
+              <span>React</span>
+              <span>Vue.js</span>
+              <span>Tailwind CSS</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3>Backend</h3>
+            <div class="skill-tags">
+              <span>Node.js</span>
+              <span>Express</span>
+              <span>Python</span>
+              <span>Django</span>
+              <span>REST APIs</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3>Database & Tools</h3>
+            <div class="skill-tags">
+              <span>MongoDB</span>
+              <span>PostgreSQL</span>
+              <span>Git</span>
+              <span>Docker</span>
+              <span>AWS</span>
+              <span>Figma</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects-section">
+      <div class="container">
+        <h2 class="section-title">Projects</h2>
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <div class="project-card">
+            <header class="project-header">
+              <div class="folder-icon">📂</div>
+              <div class="project-links">
+                <a href="#" class="project-link-icon" aria-label="GitHub">🔗</a>
+                <a href="#" class="project-link-icon" aria-label="Live Demo">🚀</a>
+              </div>
+            </header>
+            <h3 class="project-title">E-Commerce Dashboard</h3>
+            <p class="project-description">
+              A centralized dashboard for managing inventory, orders, and customer data. Features real-time analytics
+              and dark mode support.
+            </p>
+            <div class="project-tech-list">
+              <span>React</span>
+              <span>Node.js</span>
+              <span>MongoDB</span>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="project-card">
+            <header class="project-header">
+              <div class="folder-icon">📂</div>
+              <div class="project-links">
+                <a href="#" class="project-link-icon" aria-label="GitHub">🔗</a>
+              </div>
+            </header>
+            <h3 class="project-title">Task Management App</h3>
+            <p class="project-description">
+              A productivity tool allowing users to organize tasks with drag-and-drop functionality, priorities, and
+              deadlines.
+            </p>
+            <div class="project-tech-list">
+              <span>Vue.js</span>
+              <span>Firebase</span>
+              <span>Tailwind</span>
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="project-card">
+            <header class="project-header">
+              <div class="folder-icon">📂</div>
+              <div class="project-links">
+                <a href="#" class="project-link-icon" aria-label="GitHub">🔗</a>
+                <a href="#" class="project-link-icon" aria-label="Live Demo">🚀</a>
+              </div>
+            </header>
+            <h3 class="project-title">Portfolio Website</h3>
+            <p class="project-description">
+              My personal portfolio website to showcase my skills and experience. Built with performance and
+              accessibility in mind.
+            </p>
+            <div class="project-tech-list">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+              <span>Vite</span>
+            </div>
+          </div>
+          <!-- Project 4 -->
+          <div class="project-card">
+            <header class="project-header">
+              <div class="folder-icon">📂</div>
+              <div class="project-links">
+                <a href="#" class="project-link-icon" aria-label="GitHub">🔗</a>
+              </div>
+            </header>
+            <h3 class="project-title">Weather API Wrapper</h3>
+            <p class="project-description">
+              A lightweight wrapper for the OpenWeatherMap API, providing easy-to-use methods for fetching weather data.
+            </p>
+            <div class="project-tech-list">
+              <span>TypeScript</span>
+              <span>Axios</span>
+              <span>NPM</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interests Section -->
+    <section id="interests" class="section interests-section">
+      <div class="container">
+        <h2 class="section-title">Interests</h2>
+        <div class="interests-grid">
+          <div class="interest-card">
+            <span class="interest-icon">📷</span>
+            <p>Photography</p>
+          </div>
+          <div class="interest-card">
+            <span class="interest-icon">🎮</span>
+            <p>Gaming</p>
+          </div>
+          <div class="interest-card">
+            <span class="interest-icon">📚</span>
+            <p>Reading</p>
+          </div>
+          <div class="interest-card">
+            <span class="interest-icon">✈️</span>
+            <p>Traveling</p>
+          </div>
+          <div class="interest-card">
+            <span class="interest-icon">☕</span>
+            <p>Coffee</p>
+          </div>
+          <div class="interest-card">
+            <span class="interest-icon">🏃</span>
+            <p>Running</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+      <div class="container contact-container">
+        <h2 class="section-title">Get In Touch</h2>
+        <p class="contact-text">
+          I'm currently looking for new opportunities. Whether you have a question or just want to say hi, I'll try my
+          best to get back to you!
+        </p>
+
+        <form class="contact-form" action="#" method="POST">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required placeholder="Your Name">
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required placeholder="your@email.com">
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required placeholder="Hello! I'd like to..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-solid submit-btn">Send Message</button>
+        </form>
+
+        <div class="social-links">
+          <a href="#" class="social-link" aria-label="GitHub">GitHub</a>
+          <a href="#" class="social-link" aria-label="LinkedIn">LinkedIn</a>
+          <a href="#" class="social-link" aria-label="Twitter">Twitter</a>
+          <a href="mailto:email@example.com" class="social-link" aria-label="Email">Email</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer id="footer" class="footer">
+    <div class="container">
+      <p>Designed & Built by John Doe</p>
+      <p class="copyright">&copy; 2024. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>

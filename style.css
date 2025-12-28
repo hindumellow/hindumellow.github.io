@@ -1,0 +1,132 @@
+:root {
+  /* Fonts */
+  --font-sans: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  
+  /* Colors - Dark Mode (Default) */
+  --bg-primary: #0a192f;
+  --bg-secondary: #112240;
+  --bg-tertiary: #233554;
+  
+  --text-primary: #ccd6f6;
+  --text-secondary: #8892b0;
+  --text-accent: #64ffda;
+  
+  --elevation-low: 0 2px 4px rgba(0,0,0,0.2);
+  --elevation-med: 0 4px 8px rgba(0,0,0,0.3);
+  
+  --transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+[data-theme="light"] {
+  --bg-primary: #ffffff;
+  --bg-secondary: #f0f4f8;
+  --bg-tertiary: #d9e2ec;
+  
+  --text-primary: #102a43;
+  --text-secondary: #486581;
+  --text-accent: #0077cc;
+  
+  --elevation-low: 0 2px 4px rgba(0,0,0,0.1);
+  --elevation-med: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  line-height: 1.6;
+  transition: var(--transition);
+  overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: var(--transition);
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  font-family: inherit;
+}
+
+/* Utilities */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 100%;
+}
+
+.section {
+  padding: 100px 0;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.section-title::after {
+  content: "";
+  display: block;
+  height: 1px;
+  background-color: var(--bg-tertiary);
+  flex-grow: 1;
+  max-width: 300px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  transition: var(--transition);
+}
+
+.btn-primary {
+  color: var(--text-accent);
+  background: transparent;
+  border: 1px solid var(--text-accent);
+}
+
+.btn-primary:hover {
+  background: rgba(100, 255, 218, 0.1); /* Use rgba for transparency */
+}
+
+/* Light mode hover fix */
+[data-theme="light"] .btn-primary:hover {
+  background: rgba(0, 119, 204, 0.1);
+}
+
+.btn-solid {
+  background-color: var(--text-accent);
+  color: var(--bg-primary);
+  border: 1px solid var(--text-accent);
+}
+
+.btn-solid:hover {
+  filter: brightness(1.1);
+}
